@@ -14,8 +14,7 @@ public class PerfectBinaryTree {
   }
 
   public boolean isPerfectTree(Node root){
-    depth = getNodeDepth(root);
-    return checkIfTreeIsPerfect(root, depth, 0);
+    return checkIfTreeIsPerfect(root, getNodeDepth(root), 0);
   }
 
   private boolean checkIfTreeIsPerfect(Node root, int depth, int level) {
